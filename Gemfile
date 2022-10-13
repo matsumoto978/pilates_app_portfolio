@@ -19,9 +19,6 @@ gem 'devise-i18n'
 # 画像投稿機能
 gem 'carrierwave', '~> 2.0'
 gem 'mini_magick'
-# 検索機能
-gem 'kaminari'
-gem 'ransack'
 
 gem "active_hash"
 
