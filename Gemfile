@@ -16,6 +16,9 @@ gem 'devise'
 # 多言語対応(Rails 6の場合)
 gem 'rails-i18n', '~> 6.0'
 gem 'devise-i18n'
+# 画像投稿機能
+gem 'carrierwave', '~> 2.0'
+gem 'mini_magick'
 
 gem "active_hash"
 

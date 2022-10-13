@@ -6,6 +6,7 @@ class Post < ApplicationRecord
 
   validates :content, presence: true
   validates :ward_id, presence: true
+  mount_uploader :img, ImageUploader
 
   DEFALULATE = 0.0
 
