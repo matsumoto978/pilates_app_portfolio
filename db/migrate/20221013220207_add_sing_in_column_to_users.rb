@@ -1,0 +1,7 @@
+class AddSingInColumnToUsers < ActiveRecord::Migration[6.1]
+  def change
+    add_column :users, :img, :string
+    add_column :users, :introduction, :text
+    add_column :users, :gender, :integer, default: 0, null: false
+  end
+end
