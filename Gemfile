@@ -22,6 +22,8 @@ gem 'mini_magick'
 # 検索機能
 gem 'kaminari'
 gem 'ransack'
+# 管理者画面
+gem 'activeadmin'
 
 gem "active_hash"
 
