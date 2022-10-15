@@ -5,4 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+password = "password"
+admin_email = "admin@example.com"
+
+AdminUser.find_or_create_by!(email: admin_email) do |adminuser|
+  adminuser.password = password
+  puts "管理者ユーザーの初期データインポートに成功しました。"
+end
