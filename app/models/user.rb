@@ -7,6 +7,8 @@ class User < ApplicationRecord
 
   has_many :liked_posts, through: :likes, source: :post
 
+  mount_uploader :img, ImageUploader
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
  
