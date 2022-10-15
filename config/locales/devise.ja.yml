@@ -1,7 +1,7 @@
 ja:
   activerecord:
     attributes:
-      user:
+      user: &user
         confirmation_sent_at: パスワード確認送信時刻
         confirmation_token: パスワード確認用トークン
         confirmed_at: パスワード確認時刻
@@ -27,6 +27,8 @@ ja:
         updated_at: 更新日
     models:
       user: ユーザー
+      admin_user: 管理者ユーザー
+      admin_comment: コメント
   devise:
     confirmations:
       confirmed: メールアドレスが確認できました。
