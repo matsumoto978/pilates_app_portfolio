@@ -18,12 +18,69 @@
 $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 @import "@fortawesome/fontawesome-free/scss/fontawesome";
 @import "@fortawesome/fontawesome-free/scss/regular";
-/* 以上を追加 */
 
-.field_with_errors {
-  display: contents;
+/* 全体 */
+html {
+  flex-direction: column;
+  height: 100%;
+}
 
-  input {
-    border: 2px solid red;
-  }
+body {
+  height: 100%;
+  background-color: hsl(39, 100%, 94%);
+}
+
+main {
+  min-height: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: hsl(39, 100%, 94%);
+}
+
+.base-container {
+  margin: 7% auto 0;
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-family: "Londrina Shadow", cursive;
+  font-size: 20px;
+}
+
+.mw-md {
+  max-width: 720px;
+}
+
+.mw-lg {
+  max-width: 960px;
+}
+
+.mw-xl {
+  max-width: 1200px;
+}
+
+/* ページネーション部分 */
+.pagination {
+  justify-content: center;
+  padding: 30px;
+}
+
+.pagination li a {
+  background-color: #c79652;
+  color: #fff;
+}
+
+.page-item.active .page-link {
+  background-color: #fff;
+  border-color: #c79652;
+  color: #c79652;
+}
+
+/* フラッシュの色 */
+.alert-notice {
+  @extend .alert-info;
+}
+
+.alert-alert {
+  @extend .alert-danger;
 }
