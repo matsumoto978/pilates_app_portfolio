@@ -24,6 +24,8 @@ gem 'kaminari'
 gem 'ransack'
 # 管理者画面
 gem 'activeadmin'
+# enumをI18n対応
+gem 'enum_help'
 
 gem "active_hash"
 
