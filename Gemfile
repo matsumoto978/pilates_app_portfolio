@@ -27,6 +27,7 @@ gem 'activeadmin'
 # enumをI18n対応
 gem 'enum_help'
 
+
 gem "active_hash"
 
 group :development, :test do
