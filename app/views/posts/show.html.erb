@@ -35,6 +35,16 @@
         </div>
         <div class="post">
           <span class="title-label">
+            公式サイト
+          </span>
+          <p class="post-url">
+            <% if @post.URL? %>
+              <%= text_url_to_link(h(@post.URL)).html_safe %>
+            <% end%>
+          </p>
+        </div>
+        <div class="post">
+          <span class="title-label">
             TEL
           </span>
           <p class="post-tel">
@@ -75,6 +85,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class=login-button>
+    <%= link_to "トップページへ", root_path, class:"btn btn-block" %>
   </div>
 </section>
 </div>
